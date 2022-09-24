@@ -31,6 +31,29 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>n2godtraining8</username>
+						<password>46812123aXXtraining</password>
+						<applicationName>dev-${name}</applicationName>
+						<environment>DEV</environment>
+						<region>us-east-2</region>
+						<workers>1</workers>
+						<workerType>MICRO</workerType>
+						<objectStoreV2>true</objectStoreV2>
+						<properties>
+							<http.port>8081</http.port>
+							<api.id>18172366</api.id>
+							<env>dev</env>
+							<anypoint.platform.client_id>05fb574d67c54b1a8dbb6c7d41a71042</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>A94Ea447529F47e39A1D5F05d4D12795</anypoint.platform.client_secret>
+							<anypoint.platform.base_uri>https://eu1.anypoint.mulesoft.com</anypoint.platform.base_uri>
+							<anypoint.platform.analytics_base_uri>https://analytics-ingest.eu1.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
+						</properties>
+					</cloudHubDeployment>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
